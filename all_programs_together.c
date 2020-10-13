@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
 #include<stdlib.h>
 int main()
@@ -39,8 +38,8 @@ int main()
 			leapyr();
 			break;
 		case 2:
-			armstrong();
-			break;
+			// armstrong();
+			// break;
 		case 3:
 			palindrome();
 			break;
@@ -130,34 +129,34 @@ void leapyr()
 		
 	
 }
-void armstrong()
-{
-	int rem,c,n,temp;
-	int result = 0;
-	printf("enter a number");
-	scanf("%d",&n);
-	temp = n;
-	while(temp!=0)
-	{
-		temp/=10;
-		c++;
-	}
-	temp = n;
-	while(temp!=0)
-	{
-		rem = temp%10;
-		result += pow(rem,c);
-		temp/=10;
-	}
-	if(result == n)
-	{
-		printf("%d is armstrong number",n);
-	}
-	else
-	{
-		printf("%d is not armstrong number",n);
-	}
-}
+// void armstrong()
+// {
+// 	int rem,c,n,temp;
+// 	int result = 0;
+// 	printf("enter a number");
+// 	scanf("%d",&n);
+// 	temp = n;
+// 	while(temp!=0)
+// 	{
+// 		temp/=10;
+// 		c++;
+// 	}
+// 	temp = n;
+// 	while(temp!=0)
+// 	{
+// 		rem = temp%10;
+// 		result += pow(rem,c);
+// 		temp/=10;
+// 	}
+// 	if(result == n)
+// 	{
+// 		printf("%d is armstrong number",n);
+// 	}
+// 	else
+// 	{
+// 		printf("%d is not armstrong number",n);
+// 	}
+// }
 void palindrome()
 {
 	int rem,temp,n;
@@ -619,7 +618,7 @@ void file_operation()
 		printf("%c",c);
 	}
 	fclose(fp);
-	return 0;
+	
 }
 
 void student_detail_file()
@@ -640,7 +639,7 @@ void student_detail_file()
 		
 	}
 	fclose(f1);
-	return 0;
+	
 }
 
 
